@@ -188,7 +188,7 @@ the base project where the Service Account was created:
 
 ### Verifying setup
 
-A [preconditions checker script](./scripts/preconditions/preconditions.py) is
+A [preconditions checker script](./test/scripts/preconditions/test_preconditions.py) is
 included to verify that all preconditions are met before the Project Factory
 runs. The script will run automatically if the script dependencies (Python,
 "google-auth", and "google-api-python-client") are available at runtime. If the
@@ -198,7 +198,7 @@ The precondition checker script can be directly invoked before running the
 project factory:
 
 ```sh
-./scripts/preconditions/preconditions.py \
+./test/scripts/preconditions/test_preconditions.py \
   --credentials_path "./credentials.json" \
   --billing_account 000000-000000-000000 \
   --org_id 000000000000 \
